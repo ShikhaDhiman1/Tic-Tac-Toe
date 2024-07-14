@@ -67,6 +67,16 @@ ol#players li{
   border: 2px solid transparent;
 }
 
+#players.highlight-player li.active {
+  border-color: #f6e35a;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+#players.highlight-player li.active .player-name,
+#players.highlight-player li.active .player-symbol {
+  color: #f6e35a;
+}
+
 #players button{
   width: 3rem;
   border: 1px solid #f8ca31;
@@ -161,5 +171,11 @@ ol{
   cursor: pointer;
   font-family: 'Caprasimo', cursive;
   padding: 1rem;
+}
+
+#log{
+  text-align: center;
+  font-family: 'Caprasimo', cursive;
+  color: #3f3b00;
 }
 
